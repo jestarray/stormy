@@ -1,0 +1,17 @@
+{
+    "what is algebra?": {
+        "type": "choice",
+        "options": [
+            "study of manipulating the equation to figure out the unknown",
+            "study of animals"
+        ],
+        "hints": [
+            ""
+        ],
+        "answer": 0
+    },
+    "In the equation 4 = 2 + x , what is x?": {
+        "type": "fill",
+        "answer": 2
+    }
+}

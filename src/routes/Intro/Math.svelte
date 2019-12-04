@@ -1,0 +1,3 @@
+<script>import Youtube from "../../components/Youtube.svelte";</script><Youtube src="https://youtu.be/NybHckSEQBI" /><svelte:head><title>Math</title></svelte:head>{@html `<h1>hello there!</h1>
+<p>Because this file is named <code>01-Math.md</code> and there is a corresponding <code>01-Math.json</code> file, a draggable panel on the right will automatically be generated for the contents in the json file.</p>
+`}

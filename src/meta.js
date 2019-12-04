@@ -1,0 +1,1 @@
+export default {"title":"demo","structure":{"Intro":[{"name":"Kiri","has_read":false},{"name":"Math","has_read":false},{"name":"Atest","has_read":false},{"name":"Other","has_read":false},{"name":"Overview","has_read":false}]},"exercise_pages":["Math"],"root":[]}

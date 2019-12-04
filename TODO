@@ -1,0 +1,25 @@
+TODO:
+* URLs are case sensitive
+* Move RightPanel out of __layout(note: gave up because its hard to make it both fixed, growable and flex aligned outside of __layout)
+* offer option to export progress to json file and load it
+* comment answers: questions that ask "where do you see binary in your life?" and displays github comments
+* prefetch pages on hover?
+* time stamps
+* support linking to a video using native html5 tags opposed to only youtube.
+* random generated questions require writing a .svelte file?
+* remember scroll position on refresh?
+* analytics??
+* cannot add line numbers because of prismjs highlighting
+* allow youtube video tags everywhere instead of just the front matter
+
+Minimize file size:
+* run all images through png quant 
+* minify json
+
+Notes:
+JSON MAY NOT PRESERVE ORDERING, WORKS FOR NOW BUT FURTHER RESEARCH IS NEEDED
+Line numbers on highlighting is broken
+
+3 levels of understanding problem set? level 3 is maximum inference?
+
+# the first rule is that you must not fool yourself
