@@ -1,16 +1,17 @@
 TODO:
-* URLs are case sensitive
-* Move RightPanel out of __layout(note: gave up because its hard to make it both fixed, growable and flex aligned outside of __layout)
+* add explanations to exercise problems when wrong answer is submitted
+* Consider moving RightPanel out of layout and make it more flexible(skipping for now because its better to have more complex scripting functionality split into a seperate page)
 * offer option to export progress to json file and load it
-* comment answers: questions that ask "where do you see binary in your life?" and displays github comments
-* prefetch pages on hover?
+* comment answers for open ended questions: "what do you think of (x)?" and displays github comments
 * time stamps
 * support linking to a video using native html5 tags opposed to only youtube.
-* random generated questions require writing a .svelte file?
 * remember scroll position on refresh?
 * analytics??
 * cannot add line numbers because of prismjs highlighting
 * allow youtube video tags everywhere instead of just the front matter
+* look into pure offline mode using hash based routing. Just fire up the html file without needing a http server
+* URLs are case sensitive
+* auditory and more visual feedback when answer is wrong in exercise panel
 
 Minimize file size:
 * run all images through png quant 

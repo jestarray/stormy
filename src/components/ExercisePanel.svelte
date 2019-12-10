@@ -42,13 +42,12 @@
 <div
   on:keydown={e => {
     if (e.keyCode === 13) {
-      check_answer();
       if (enter_for_next === true) {
         dispatch('next');
         enable_next = false;
         chosen_answer = '';
         enter_for_next = false;
-      } else if (enter_for_next === false) {
+      } else if (enter_for_next === false && check_answer()) {
         enter_for_next = true;
       }
     }
@@ -67,6 +66,9 @@
                 chosen_answer = choice_index;
               }} />
             <label>{choice}</label>
+            <p class={enable_next ? '' : 'hidden'}>
+              <i>{data.explanation[choice_index]}</i>
+            </p>
           </div>
         {/each}
       {/if}

@@ -1,46 +1,34 @@
-<style>
-	h1, figure, p {
-		text-align: center;
-		margin: 0 auto;
-	}
-
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	figure {
-		margin: 0 0 1em 0;
-	}
-
-	img {
-		width: 100%;
-		max-width: 400px;
-		margin: 0 0 1em 0;
-	}
-
-	p {
-		margin: 1em auto;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
-</style>
-
 <svelte:head>
-	<title>Sapper project template</title>
+  <title>made with stormy</title>
 </svelte:head>
 
-<h1>Great success!</h1>
+<h1>stormy</h1>
+<p>
+  a small set of tools to make education more interactive, made with svelte and
+  sapper
+</p>
 
-<figure>
-	<img alt='Borat' src='great-success.png'>
-	<figcaption>HIGH FIVE!</figcaption>
-</figure>
+<ul>
+  <li>
+    the
+    <a href="https://github.com/jestarray/stormy">source</a>
+    can be found here
+  </li>
+  <li>
+    Icon made from
+    <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a>
+    is licensed by CC BY 3.0
+  </li>
+</ul>
 
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<h3>How to use</h3>
+<ul>
+  <li>
+    The left bar is closable by clicking the orange bar. Mark as read will place
+    a checkbox on the selected subsection
+  </li>
+  <li>
+    A running man means the page contains an exercise, of which an orange bar on
+    the right can be dragged to view simultaneously.
+  </li>
+</ul>

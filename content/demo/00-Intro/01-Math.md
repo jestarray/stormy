@@ -1,5 +1,5 @@
 ---
-youtube: https://youtu.be/NybHckSEQBI
+youtube: https://www.youtube.com/watch?v=NybHckSEQBI
 ---
 
 # hello there!

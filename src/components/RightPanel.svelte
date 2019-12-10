@@ -45,6 +45,7 @@
 
     let wrapper = document.getElementById("area");
     let left_panel = document.getElementById("main");
+    let nav_bar = document.getElementById("navbar");
     let handler = document.getElementById("right-panel-controller");
     let right_panel = document.getElementById("right-panel");
 
@@ -69,18 +70,19 @@
         } else {
           e.preventDefault();
         }
-
         // Get offset
         let containerOffsetLeft = wrapper.getBoundingClientRect().left;
         // Get x-coordinate of pointer relative to container
         let pointerRelativeXpos = clientX - containerOffsetLeft;
         // * Set flex-grow to 0 to prevent it from growing
-        left_panel.style.width = pointerRelativeXpos + "px";
+        left_panel.style.width =
+          pointerRelativeXpos - nav_bar.clientWidth + "px";
         left_panel.style.flexGrow = 0;
-
         let right_panel_width = width - clientX;
-        right_panel.style.width = right_panel_width + "px";
-        right_panel.style.flexGrow = 0;
+        if (right_panel_width >= 16) {
+          right_panel.style.width = right_panel_width + "px";
+          right_panel.style.flexGrow = 0;
+        }
       }
     };
 
@@ -191,7 +193,7 @@
   }
 
   #content {
-    flex: 1 1;
+    flex: 1 1 auto;
   }
   .hidden * {
     display: none;
@@ -214,7 +216,9 @@
   }
   #wrapper {
     display: flex;
+    align-items: stretch;
     justify-content: space-between;
+    flex: 1 1;
   }
   #show-exercise-panel {
     display: flex;

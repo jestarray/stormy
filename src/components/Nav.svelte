@@ -107,7 +107,7 @@
   nav {
     padding: 0 3em 0 1em;
     background-color: #fafafa;
-    width: auto;
+    width: 15em;
     overflow-y: auto;
     height: 100%;
   }
@@ -193,13 +193,14 @@
     on:click={() => {
       hide_nav = !hide_nav;
     }} />
-  <nav class={!hide_nav ? 'nav' : 'hidden'}>
-    <h2>{title}</h2>
+  <nav id="navbar" class={!hide_nav ? 'nav' : 'hidden'}>
+    <a href="/">
+      <h2>{title}</h2>
+    </a>
 
     <button id="tools" on:click={update_reading_progress}>
       marked as read
     </button>
-    <button id="tools">comments</button>
     <ol id="section">
       {#each meta.root as root_files}
         <h3>

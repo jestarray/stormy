@@ -1,6 +1,6 @@
 # stormy
 
-a small set of tools to make education more interactive
+a small set of tools to make education more interactive, made with svelte and sapper
 
 ## Constraints:
 * no spaces in file names, use underscores.

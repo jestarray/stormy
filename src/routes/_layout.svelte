@@ -25,7 +25,7 @@
   main {
     margin: 1em 0 0 1em;
     flex: 1 1 auto;
-    /* overflow: auto; */
+    overflow: auto;
   }
   #area {
     display: flex;
@@ -40,9 +40,9 @@
   <main id="main">
     <slot />
   </main>
-  <!-- very difficult to move RightPanel fixed and flexboxed outside of __layout.svelte -->
+  <!-- See Side.svelte for a per page implementation -->
 
-  <!--   {#if show_right_side_panel}
+  {#if show_right_side_panel}
     <RightPanel src={`${current_page_name}`} />
-  {/if} -->
+  {/if}
 </div>

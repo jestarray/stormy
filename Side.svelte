@@ -10,15 +10,19 @@
     overflow: hidden;
   }
 
-  .main {
+  #main-content {
     margin: 1em 0 0 1em;
     flex: 1 1 auto;
     overflow: auto;
   }
+  .panel {
+    display: flex;
+    flex: 1 1 auto;
+  }
 </style>
 
 <div class="area">
-  <div class="main">
+  <div id="main-content">
     <h1>goodbye</h1>
     <p>hello world</p>
     <p>
@@ -266,5 +270,7 @@
       pellentesque elit ullamcorper.
     </p>
   </div>
+  <!-- need to make rightpanel grab the maincontent div here and adjust it for this to work. also remove overflow from #main to remove dual sidebar-->
   <RightPanel src="Math" />
 </div>
+panelpanel
